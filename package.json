@@ -1,0 +1,26 @@
+{
+  "name": "ada-mock",
+  "version": "1.0.0",
+  "description": "mock,ada",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/topolr/ada-mock.git"
+  },
+  "keywords": [
+    "mock",
+    "ada"
+  ],
+  "author": "WangJinliang (hou80houzhu)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/topolr/ada-mock/issues"
+  },
+  "homepage": "https://github.com/topolr/ada-mock#readme",
+  "dependencies": {
+    "yamljs": "^0.3.0"
+  }
+}
