@@ -1,0 +1,13 @@
+request:
+ header:
+  token:string(10)
+ parameter:
+  page:string(10) | current page
+  pageSize:string(10) | page size
+
+response:
+ code:number(10)
+ data:
+  - name:string(10)
+    age:string(10)
+    birthday:date
