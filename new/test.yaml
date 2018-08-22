@@ -1,0 +1,13 @@
+request:
+ header:
+  token: string(10,'sdsdsdsd')
+ parameter:
+  page: string(10) | current page
+  pageSize: string(10) | page size
+
+response:
+ code: number(10)
+ data:
+  - name: string(10,uuid)
+    age: string(10)
+    birthday: date
