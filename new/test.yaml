@@ -9,9 +9,9 @@ response: #sdsdsdsddsd6
  code: number("10") #sdsdsdsddsd7
  data: #sdsdsdsddsd8
   - name: string(10,uuid)
-    # sdsdsd
-    # sdsdsd
-    # sdssdsd
+    # - [200] ok
+    # - [500] fail
+    # - [505] error
     age: string(10) #sdsdsdsddsd10
     birthday: date #sdsdsdsddsd11
   - sdsd #ssd
