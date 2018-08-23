@@ -1,13 +1,19 @@
-request:
- header:
-  token: string(10,'sdsdsdsd')
+request: #sdsdsdsddsd1
+ header: #sdsdsdsddsd2
+  token: string(10,'sdsdsdsd') #sdsdsdsddsd3
  parameter:
-  page: string(10) | current page
-  pageSize: string(10) | page size
+  page: string(10) #sdsdsdsddsd4
+  pageSize: string(10) #sdsdsdsddsd5
 
-response:
- code: number("10")
- data:
+response: #sdsdsdsddsd6
+ code: number("10") #sdsdsdsddsd7
+ data: #sdsdsdsddsd8
   - name: string(10,uuid)
-    age: string(10)
-    birthday: date
+    # sdsdsd
+    # sdsdsd
+    # sdssdsd
+    age: string(10) #sdsdsdsddsd10
+    birthday: date #sdsdsdsddsd11
+  - sdsd #ssd
+  - sdsd #ssd
+  - sdsd #ssd
