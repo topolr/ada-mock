@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/topolr/ada-mock#readme",
   "dependencies": {
+    "loggd": "^2.0.0",
     "yamljs": "^0.3.0"
   }
 }

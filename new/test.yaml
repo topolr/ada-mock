@@ -6,7 +6,7 @@ request:
   pageSize: string(10) | page size
 
 response:
- code: number(10)
+ code: number("10")
  data:
   - name: string(10,uuid)
     age: string(10)
