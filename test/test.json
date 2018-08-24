@@ -6,7 +6,7 @@
         "__comment__": "sdsdsdsddsd2",
         "__props__": {
           "token": {
-            "comment": "sdsdsdsddsd3",
+            "__comment__": "sdsdsdsddsd3",
             "parameter": "10,'sdsdsdsd'",
             "name": "string",
             "length": 200,
@@ -22,7 +22,7 @@
     "__comment__": "sdsdsdsddsd6",
     "__props__": {
       "code": {
-        "comment": "sdsdsdsddsd7",
+        "__comment__": "sdsdsdsddsd7",
         "parameter": "\"10\"",
         "name": "number",
         "length": 200,
@@ -35,7 +35,7 @@
         "__props__": [
           {
             "name": {
-              "comment": " - [200] ok<%||%> - [500] fail<%||%> - [505] error",
+              "__comment__": " - [200] ok\n - [500] fail\n - [505] error",
               "parameter": "10,uuid",
               "name": "string",
               "length": 200,
@@ -44,7 +44,7 @@
               "validateProfile": ""
             },
             "age": {
-              "comment": "sdsdsdsddsd10",
+              "__comment__": "sdsdsdsddsd10",
               "parameter": "10",
               "name": "string",
               "length": 200,
@@ -54,12 +54,44 @@
             },
             "birthday": {
               "__comment__": "sdsdsdsddsd11",
-              "__props__": "date"
+              "parameter": "",
+              "name": "date",
+              "length": 200,
+              "defaultValue": "",
+              "generateProfile": "",
+              "validateProfile": ""
             }
           },
-          "date <%|%>ssd",
-          "date <%|%>ssd",
-          "date <%|%>ssd"
+          {
+            "__value__": "date",
+            "__comment__": "ssd",
+            "parameter": "",
+            "name": "date",
+            "length": 200,
+            "defaultValue": "",
+            "generateProfile": "",
+            "validateProfile": ""
+          },
+          {
+            "__value__": "date",
+            "__comment__": "ssd",
+            "parameter": "",
+            "name": "date",
+            "length": 200,
+            "defaultValue": "",
+            "generateProfile": "",
+            "validateProfile": ""
+          },
+          {
+            "__value__": "date",
+            "__comment__": "ssd",
+            "parameter": "",
+            "name": "date",
+            "length": 200,
+            "defaultValue": "",
+            "generateProfile": "",
+            "validateProfile": ""
+          }
         ]
       }
     }
