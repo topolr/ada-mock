@@ -1,6 +1,7 @@
 let types = [
 	require("./string"),
-	require("./number")
+	require("./number"),
+	require("./date")
 ];
 
 let Types = {

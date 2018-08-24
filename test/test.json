@@ -1,0 +1,67 @@
+{
+  "request": {
+    "__comment__": "sdsdsdsddsd1",
+    "__props__": {
+      "header": {
+        "__comment__": "sdsdsdsddsd2",
+        "__props__": {
+          "token": {
+            "comment": "sdsdsdsddsd3",
+            "parameter": "10,'sdsdsdsd'",
+            "name": "string",
+            "length": 200,
+            "defaultValue": "",
+            "generateProfile": "",
+            "validateProfile": ""
+          }
+        }
+      }
+    }
+  },
+  "response": {
+    "__comment__": "sdsdsdsddsd6",
+    "__props__": {
+      "code": {
+        "comment": "sdsdsdsddsd7",
+        "parameter": "\"10\"",
+        "name": "number",
+        "length": 200,
+        "defaultValue": "",
+        "generateProfile": "",
+        "validateProfile": ""
+      },
+      "data": {
+        "__comment__": "sdsdsdsddsd8",
+        "__props__": [
+          {
+            "name": {
+              "comment": " - [200] ok<%||%> - [500] fail<%||%> - [505] error",
+              "parameter": "10,uuid",
+              "name": "string",
+              "length": 200,
+              "defaultValue": "",
+              "generateProfile": "",
+              "validateProfile": ""
+            },
+            "age": {
+              "comment": "sdsdsdsddsd10",
+              "parameter": "10",
+              "name": "string",
+              "length": 200,
+              "defaultValue": "",
+              "generateProfile": "",
+              "validateProfile": ""
+            },
+            "birthday": {
+              "__comment__": "sdsdsdsddsd11",
+              "__props__": "date"
+            }
+          },
+          "sdsd <%|%>ssd",
+          "sdsd <%|%>ssd",
+          "sdsd <%|%>ssd"
+        ]
+      }
+    }
+  }
+}
