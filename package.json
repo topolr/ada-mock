@@ -4,7 +4,9 @@
   "description": "mock,ada",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "node ./node_modules/ada-pack/bin/develop.js",
+    "publish": "node ./node_modules/ada-pack/bin/publish.js",
+    "ada": "node ./node_modules/.bin/adajs"
   },
   "repository": {
     "type": "git",
@@ -22,6 +24,17 @@
   "homepage": "https://github.com/topolr/ada-mock#readme",
   "dependencies": {
     "loggd": "^2.0.0",
-    "yamljs": "^0.3.0"
+    "yamljs": "^0.3.0",
+    "adajs": "git+https://github.com/topolr/ada.git",
+    "body-parser": "^1.18.2",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.16.2",
+    "express-session": "^1.15.6",
+    "formidable": "^1.1.1",
+    "ada-uikit": "git+https://github.com/topolr/ada-uikit.git",
+    "http-proxy-middleware": "^0.17.4"
+  },
+  "devDependencies": {
+    "ada-pack": "git+https://github.com/topolr/ada-pack.git"
   }
 }

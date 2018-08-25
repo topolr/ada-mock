@@ -1,0 +1,31 @@
+.welcome {
+    position: absolute;
+    left:0;
+    top:0;
+    right:0;
+    bottom:0;
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    -webkit-box-orient: vertical;
+    .body {
+    }
+    .logo {
+        text-align: center;
+        padding:0 0 20px 0;
+    }
+    .title {
+        text-align: center;
+        font-size: 18px;
+        font-weight: 500;
+        line-height:45px;
+    }
+    .desc {
+        text-align: center;
+        font-size:12px;
+        line-height:30px;
+        a{
+            padding:0 5px 0 5px;
+        }
+    }
+}

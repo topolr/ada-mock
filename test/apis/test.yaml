@@ -1,4 +1,7 @@
+url: "/test"
+
 request: #sdsdsdsddsd1
+ method: "post"
  header: #sdsdsdsddsd2
   token: string(10,'sdsdsdsd') #sdsdsdsddsd3
  parameter:
