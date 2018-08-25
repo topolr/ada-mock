@@ -2,6 +2,7 @@ let Path = require("path");
 
 module.exports = {
     basePath: Path.resolve(__dirname),
+    typesPath: "./types/",
     damlPath: "./test.damls",
     types:[
         {

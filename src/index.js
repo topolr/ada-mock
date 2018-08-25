@@ -8,6 +8,7 @@ class Daml {
     constructor(configPath) {
         let conf = require(configPath);
         let _config = Object.assign({}, config, conf);
+        _config.typesPath = Path.resolve(_config.basePath, _config.typesPath);
         _config.damlPath = Path.resolve(_config.basePath, _config.damlPath);
 
         new File(_config.typesPath + "/").scan().forEach(path => {
