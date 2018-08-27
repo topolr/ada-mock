@@ -1,5 +1,3 @@
-url: "/test"
-
 request:
  method: "post"
  header:

@@ -12,5 +12,6 @@ app.use(session({
     saveUninitialized: true
 }));
 app.use(bodyParser.urlencoded({extended: true}));
+app.use("/daml", require("./src/controller/daml"));
 
 module.exports = app;
