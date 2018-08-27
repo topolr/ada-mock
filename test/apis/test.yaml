@@ -1,22 +1,19 @@
 url: "/test"
 
-request: #sdsdsdsddsd1
+request:
  method: "post"
- header: #sdsdsdsddsd2
+ header:
   token: string(10,'sdsdsdsd') #sdsdsdsddsd3
  parameter:
   page: string(10) #sdsdsdsddsd4
   pageSize: string(10) #sdsdsdsddsd5
 
-response: #sdsdsdsddsd6
- code: number("10") #sdsdsdsddsd7
+response:
+ code: number(0|1|2|3|4|5) #sdsdsdsddsd7
  data: #sdsdsdsddsd8
-  - name: string(10,uuid)
+  - name: string(10)
     # - [200] ok
     # - [500] fail
     # - [505] error
     age: string(10) #sdsdsdsddsd10
     birthday: date #sdsdsdsddsd11
-  - date #ssd
-  - date #ssd
-  - date #ssd
