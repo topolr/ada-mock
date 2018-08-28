@@ -24,20 +24,36 @@ class Daml {
     }
 
     init() {
-        return new File(this.config.apiPath + "/").scan().filter(path => Path.extname(path) === ".yaml").map(path => {
-            return {
-                hash: new File(path).hash(),
-                path,
-                url: path.substring(this.config.apiPath.length + 1),
-                doc: Base.parseDocumentInfo(new File(path).readSync())
-            }
-        }).reduce((a, info) => {
-            console.log(info);
-            return a.then(() => {
-                return this.db.insert(info);
+        return this.db.read().then(list => {
+            let infos = new File(this.config.apiPath + "/").scan().filter(path => Path.extname(path) === ".yaml").map(path => {
+                return {
+                    hash: new File(path).hash(),
+                    path,
+                    url: path.substring(this.config.apiPath.length + 1),
+                    doc: Base.parseDocumentInfo(new File(path).readSync())
+                }
             });
-        }, Promise.resolve());
-
+            let result = [];
+            list.forEach(item => {
+                if (infos.some(_item => _item.hash === item.hash)) {
+                    result.some(__item => __item.hash === item.hash) || result.push(item);
+                }
+            });
+            infos.forEach(item => {
+                if (!list.some(_item => _item.hash === item.hash)) {
+                    result.some(__item => __item.hash === item.hash) || result.push(item);
+                }
+            });
+            return this.db.find({}).then((data) => {
+                return data.removeAll().then(() => {
+                    result.reduce((a, info) => {
+                        return a.then(() => {
+                            return this.db.insert(info);
+                        });
+                    }, Promise.resolve());
+                });
+            });
+        });
     }
 }
 

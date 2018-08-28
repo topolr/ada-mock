@@ -157,9 +157,7 @@ let Parser = {
                 return line;
             }
         }).join(os.EOL);
-        let a = this.parseBaseInfo(content);
-        console.log(a);
-        let result = this.parseData(a);
+        let result = this.parseData(this.parseBaseInfo(content));
         this.setFinalInfo(result);
         this.setFinalArray(result);
         return result;
