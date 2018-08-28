@@ -18,18 +18,26 @@ class Daml {
             });
         }
 
-        if (!new File(_config.damlPath).isExists()) {
-            new File(_config.damlPath).create();
-        }
-
         let db = new loggd(_config.damlPath);
         this.config = _config;
         this.db = db;
     }
 
     init() {
-        new File(this.config.apiPath).scan().forEach(path => {
-        });
+        return new File(this.config.apiPath + "/").scan().filter(path => Path.extname(path) === ".yaml").map(path => {
+            return {
+                hash: new File(path).hash(),
+                path,
+                url: path.substring(this.config.apiPath.length + 1),
+                doc: Base.parseDocumentInfo(new File(path).readSync())
+            }
+        }).reduce((a, info) => {
+            console.log(info);
+            return a.then(() => {
+                return this.db.insert(info);
+            });
+        }, Promise.resolve());
+
     }
 }
 

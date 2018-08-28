@@ -1,0 +1,100 @@
+[
+	{
+		"hash": "22f056da9737a1fcdc64cd8853e9abd6",
+		"path": "/Users/wangjinliang/ada/ada-mock/test/apis/test.yaml",
+		"url": "test.yaml",
+		"doc": {
+			"request": {
+				"__comment__": "",
+				"__props__": {
+					"header": {
+						"__comment__": "",
+						"__props__": {
+							"token": {
+								"__comment__": "sdsdsdsddsd3",
+								"parameter": "10,'sdsdsdsd'",
+								"name": "string",
+								"length": 200,
+								"defaultValue": "",
+								"generateProfile": "",
+								"validateProfile": ""
+							}
+						}
+					},
+					"parameter": {
+						"__comment__": "",
+						"__props__": {
+							"page": {
+								"__comment__": "sdsdsdsddsd4",
+								"parameter": "10",
+								"name": "string",
+								"length": 200,
+								"defaultValue": "",
+								"generateProfile": "",
+								"validateProfile": ""
+							},
+							"pageSize": {
+								"__comment__": "sdsdsdsddsd5",
+								"parameter": "10",
+								"name": "string",
+								"length": 200,
+								"defaultValue": "",
+								"generateProfile": "",
+								"validateProfile": ""
+							}
+						}
+					}
+				}
+			},
+			"response": {
+				"__comment__": "",
+				"__props__": {
+					"code": {
+						"__comment__": "sdsdsdsddsd7",
+						"parameter": "\"10\"",
+						"name": "number",
+						"length": 200,
+						"defaultValue": "",
+						"generateProfile": "",
+						"validateProfile": ""
+					},
+					"data": {
+						"__comment__": "sdsdsdsddsd8",
+						"__props__": [
+							{
+								"name": {
+									"__comment__": " - [200] ok\n - [500] fail\n - [505] error",
+									"parameter": "10,uuid",
+									"name": "string",
+									"length": 200,
+									"defaultValue": "",
+									"generateProfile": "",
+									"validateProfile": ""
+								},
+								"age": {
+									"__comment__": "sdsdsdsddsd10",
+									"parameter": "10",
+									"name": "string",
+									"length": 200,
+									"defaultValue": "",
+									"generateProfile": "",
+									"validateProfile": ""
+								},
+								"birthday": {
+									"__comment__": "sdsdsdsddsd11",
+									"parameter": "",
+									"name": "date",
+									"length": 200,
+									"defaultValue": "",
+									"generateProfile": "",
+									"validateProfile": ""
+								}
+							}
+						]
+					}
+				}
+			}
+		},
+		"_id": "49f7fe0d-9e82-4859-9b54-dac2723f5cfe"
+	}
+]

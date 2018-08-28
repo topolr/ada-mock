@@ -3,7 +3,9 @@ let app = new express();
 let bodyParser = require("body-parser");
 let cookieParser = require('cookie-parser');
 let session = require('express-session');
+let Daml = require("./src/index");
 
+Daml(require("path").resolve(__dirname,"./test/daml.config.js")).init();
 app.use(cookieParser('admin'));
 app.use(session({
     secret: 'admin',

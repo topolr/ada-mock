@@ -19,19 +19,33 @@ let Parser = {
             });
         } else if (util.isObject(data)) {
             Reflect.ownKeys(data).forEach(key => {
-                let a = key.split("<%|%>");
-                data[a[0]] = {
-                    __comment__: a[1] ? a[1].replace(/<%\|\|%>/g, os.EOL) : "",
-                    __props__: this.parseData(data[key])
-                };
-                delete data[key];
+                if (key.indexOf("<%|%>") !== -1) {
+                    let a = key.split("<%|%>");
+                    data[a[0]] = {
+                        __comment__: a[1] ? a[1].replace(/<%\|\|%>/g, os.EOL) : "",
+                        __props__: this.parseData(data[key])
+                    };
+                    delete data[key];
+                } else {
+                    data[key] = {
+                        __comment__: "",
+                        __props__: this.parseData(data[key])
+                    };
+                }
             });
         } else {
             if (data.indexOf("<%|%>") !== -1) {
-                let t = data.trim().split("<%|%>");
-                return {
-                    __value__: t[0].trim(),
-                    __comment__: t[1]
+                if (data.trim().indexOf("<%|%>") !== -1) {
+                    let t = data.trim().split("<%|%>");
+                    return {
+                        __value__: t[0].trim(),
+                        __comment__: t[1]
+                    }
+                } else {
+                    return {
+                        __value__: data.trim(),
+                        __comment__: ""
+                    }
                 }
             }
         }
@@ -143,7 +157,9 @@ let Parser = {
                 return line;
             }
         }).join(os.EOL);
-        let result = this.parseData(this.parseBaseInfo(content));
+        let a = this.parseBaseInfo(content);
+        console.log(a);
+        let result = this.parseData(a);
         this.setFinalInfo(result);
         this.setFinalArray(result);
         return result;

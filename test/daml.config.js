@@ -4,7 +4,7 @@ module.exports = {
     basePath: Path.resolve(__dirname),
     apiPath: "./apis/",
     typesPath: "./types/",
-    damlPath: "./test.damls",
+    damlPath: "./test.daml",
     types: [
         {
             name: "date2",

@@ -1,5 +1,4 @@
 request:
- method: "post"
  header:
   token: string(10,'sdsdsdsd') #sdsdsdsddsd3
  parameter:
@@ -7,9 +6,9 @@ request:
   pageSize: string(10) #sdsdsdsddsd5
 
 response:
- code: number(0|1|2|3|4|5) #sdsdsdsddsd7
+ code: number("10") #sdsdsdsddsd7
  data: #sdsdsdsddsd8
-  - name: string(10)
+  - name: string(10,uuid)
     # - [200] ok
     # - [500] fail
     # - [505] error

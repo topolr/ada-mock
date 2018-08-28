@@ -4,7 +4,7 @@ let Types = require("./types");
 let util = {
     parseDocumentInfo(content) {
         return Parser.parseDocumentInfo(content);
-    }
+    },
     getTypes() {
         return Types;
     }
